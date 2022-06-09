@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "esnext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "moduleResolution": "node",
+    "rootDir": "source",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./source/*"
+      ],
+      "@app/*": [
+        "./source/app/*"
+      ],
+      "@context/*": [
+        "./source/app/context/*"
+      ],
+      "@router/*": [
+        "./source/app/router/*"
+      ],
+      "@styles/*": [
+        "./source/app/styles/*"
+      ]
+    },
+    "strict": true,
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "jsx": "react-jsx",
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "source",
+    "types"
+  ]
+}

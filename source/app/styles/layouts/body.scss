@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  width: 100%;
+
+  &.dark {
+    --background: #{map-get($dark, background)} !important;
+    --color: #{map-get($dark, color)} !important;
+  }
+
+  &.light {
+    --background: #{map-get($light, background)} !important;
+    --color: #{map-get($light, color)} !important;
+  }
+
+  background-color: var(--background);
+  color: var(--color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background: #{map-get($dark, background)} !important;
+    --color: #{map-get($dark, color)} !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --background: #{map-get($light, background)} !important;
+    --color: #{map-get($light, color)} !important;
+  }
+}
