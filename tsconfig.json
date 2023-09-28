@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "@meslzy/tsconfig",
+    "@meslzy/tsconfig/react"
+  ],
+  "compilerOptions": {
+    "baseUrl": "source",
+    "rootDir": "source",
+    "outDir": "dist",
+    "paths": {
+      "~/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "source"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
